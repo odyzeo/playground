@@ -10,6 +10,7 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "@odyzeo/form-autocomplete": "^2.0.0",
     "@odyzeo/form-checkbox": "^1.2.0",
     "@odyzeo/form-item": "^1.1.1",
     "@odyzeo/form-radio": "^1.2.0",
@@ -40,10 +41,15 @@
       "node": true
     },
     "extends": [
-      "plugin:vue/essential",
-      "@vue/standard"
+      "plugin:vue/recommended",
+      "@vue/airbnb"
     ],
-    "rules": {},
+    "rules": {
+      "no-underscore-dangle": 0,
+      "vue/attributes-order": 0,
+      "vue/html-self-closing": 0,
+      "vue/no-v-html": 0
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }
